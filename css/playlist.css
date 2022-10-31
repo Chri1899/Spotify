@@ -1,0 +1,358 @@
+* {
+    font-size: 16px;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+    font-size: 16px;
+    color: black;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.header-wrapper {
+    display: flex;
+    height: 36px;
+    background-color: #640808;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-wrapper .logo-container, .menu-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-container img {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.logo-container, .logo-container span {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-container img {
+    height: 100%;
+    margin: 0 10px 0 10px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-container .button-icons {
+    height: 100%;
+}
+
+.menu-container button {
+    border-radius: 500px;
+    border-style: none;
+    padding: 10px 24px;
+}
+
+main {
+    padding-top: 66px;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.info-container {
+    padding: 10px 12px 12px 12px;
+    background-image: linear-gradient(to bottom right, #AA1110, black);
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.info-container h1 {
+    font-size: 24px;
+}
+
+.info-container p {
+    margin-bottom: 0;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.info-container .spotify-logo {
+    height: 20px;
+}
+
+.info-container .logo-container {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.action-bar {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.action-bar .front-action {
+    display: flex;
+    align-items: flex-end;
+}
+.action-bar .front-action img {
+    height: 30px;
+}
+
+.song-list-container {
+    margin: 10px 20px 0 0;
+}
+
+.song-list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.song-list .title-index {
+    display: flex;
+    flex-grow: 9;
+    height: 100%;
+    align-items: center;
+}
+
+.song-list .title-index .span-wrapper {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-list .title-index .span-wrapper span {
+    text-align: center;
+}
+
+.song-list .title-index .song-title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
+}
+
+.song-list a {
+    flex-grow: 1;
+}
+
+.song-list a img {
+    height: 30px;
+    float: right;
+    background-color: white;
+}
+
+h2 {
+    display:block;
+    width: 100%;
+    padding: 22px 16px 2px 50px;
+}
+
+.recommend-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.recommend-container li {
+    margin-bottom: 20px;
+}
+
+.recommend-container div {
+    text-align: center;
+}
+
+.play-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #53362E;
+}
+
+.relative-container.relative-container:inherit {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.play-screen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-screen .title-container {
+    display: flex;
+}
+
+.play-screen .title-container img {
+    height: 40px;
+    margin: 2px 15px 2px 2px;
+    border-radius: 10px;
+}
+
+.play-screen .title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.play-screen .action-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-screen .action-container img {
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+
+.progress-container {
+    position: absolute;
+    width: 100%;
+    justify-self: center;
+    bottom: 1px;
+}
+
+.progress-container progress {
+    width: 95%;
+    height:3px;
+    margin-left: 20px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.like-container {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 75px;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+}
+
+.like-container h3 {
+    color: black;
+    align-self: center;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.like-container button {
+    background-color: white;
+    border: none;
+    color: green;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.menu-screen {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 40px;
+    display: none;
+}
+
+.menu-screen nav {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-screen nav ul {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+}
+
+.menu-screen nav ul li {
+    margin-top: 24px;
+    margin-right: 0;
+}
+
+.menu-screen a {
+    font-size: 16px;
+}
+
+.menu-screen a.important {
+    font-size: 26px;
+}
+
+.menu-screen .exit {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: black;
+    border: none;
+}
+
+.menu-screen a {
+    text-decoration: none;
+    color: white;
+}
+
+.exit img {
+    height: 30px;
+    background-color: white;
+}
+
+.menu-container .menu-button {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255,255,255, 0);
+    padding: 8px 20px;
+}
+
+
+
+
+
+

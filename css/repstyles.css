@@ -1,0 +1,67 @@
+* {
+    font-size: 16px;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+    font-size: 16px;
+    color: black;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.header-wrapper {
+    display: flex;
+    height: 36px;
+    background-color: #640808;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-wrapper .logo-container, .menu-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-container img {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.logo-container, .logo-container span {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-container img {
+    height: 100%;
+    margin: 0 10px 0 10px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-container .button-icons {
+    height: 100%;
+}
+
+.menu-container button {
+    border-radius: 500px;
+    border-style: none;
+    padding: 10px 24px;
+}
